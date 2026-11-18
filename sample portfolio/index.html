@@ -1,0 +1,1249 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Interactive HTML, CSS, and JavaScript portfolio workshop template featuring experiences, certifications, and projects."
+    />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <!-- WORKSHOP TIP: Replace [Your Name] in the page title below -->
+    <title>[Your Name] — Portfolio Template</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <a href="#main-content" class="skip-link">Skip to content</a>
+
+    <!-- ===================================================================
+         NAVIGATION BAR
+         =================================================================== -->
+    <header class="navbar">
+      <div class="container navbar-inner">
+        <a href="#about" class="brand">
+          <!-- WORKSHOP TIP: Replace [YN] with your initials and [Your Name] with your name -->
+          <span class="brand-badge" aria-hidden="true">YN</span>
+          <span class="brand-name">[Your Name]</span>
+        </a>
+
+        <nav class="nav-desktop" aria-label="Primary navigation">
+          <a href="#about" class="nav-link is-active">About</a>
+          <a href="#experience" class="nav-link">Experience</a>
+          <a href="#certifications" class="nav-link">Certifications</a>
+          <a href="#projects" class="nav-link">Projects</a>
+          <a href="#contact" class="nav-link">Contact</a>
+        </nav>
+
+        <div class="navbar-actions">
+          <button
+            type="button"
+            id="theme-toggle"
+            class="icon-button"
+            aria-label="Switch to dark mode"
+            title="Toggle light/dark theme"
+          >
+            <svg
+              class="icon-moon"
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" />
+            </svg>
+            <svg
+              class="icon-sun"
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <circle cx="12" cy="12" r="4" />
+              <path d="M12 2v2" />
+              <path d="M12 20v2" />
+              <path d="m4.93 4.93 1.41 1.41" />
+              <path d="m17.66 17.66 1.41 1.41" />
+              <path d="M2 12h2" />
+              <path d="M20 12h2" />
+              <path d="m6.34 17.66-1.41 1.41" />
+              <path d="m19.07 4.93-1.41 1.41" />
+            </svg>
+          </button>
+
+          <button
+            type="button"
+            id="mobile-menu-toggle"
+            class="icon-button mobile-menu-toggle"
+            aria-expanded="false"
+            aria-controls="mobile-nav"
+            aria-label="Open navigation menu"
+          >
+            <svg
+              class="icon-menu"
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <line x1="4" x2="20" y1="12" y2="12" />
+              <line x1="4" x2="20" y1="6" y2="6" />
+              <line x1="4" x2="20" y1="18" y2="18" />
+            </svg>
+            <svg
+              class="icon-close"
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M18 6 6 18" />
+              <path d="m6 6 12 12" />
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <nav id="mobile-nav" class="nav-mobile" aria-label="Mobile navigation" hidden>
+        <div class="container nav-mobile-list">
+          <a href="#about" class="nav-mobile-link">About</a>
+          <a href="#experience" class="nav-mobile-link">Experience</a>
+          <a href="#certifications" class="nav-mobile-link">Certifications</a>
+          <a href="#projects" class="nav-mobile-link">Projects</a>
+          <a href="#contact" class="nav-mobile-link">Contact</a>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main-content">
+      <!-- =================================================================
+           HERO / PROFILE PLACEHOLDERS
+           WORKSHOP TIP: Replace all bracketed [...] placeholders with yours.
+           ================================================================= -->
+      <section id="about" class="hero section">
+        <div class="container">
+          <div class="hero-card">
+            <div class="hero-top-meta">
+              <span class="status-pill">
+                <span class="status-dot" aria-hidden="true"></span>
+                [Availability Status · e.g. Open to Opportunities]
+              </span>
+              <span class="location-pill">
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
+                  <circle cx="12" cy="10" r="3" />
+                </svg>
+                [City, Country · Remote Friendly]
+              </span>
+            </div>
+
+            <h1 class="hero-title">[Your Name]</h1>
+            <p class="hero-role">[Your Role / Headline — e.g. Web Developer &amp; Designer]</p>
+            <p class="hero-bio">
+              [Short Bio Placeholder: Write 2–3 sentences describing your background, the tools or
+              languages you enjoy working with, and the kind of problems you love solving.]
+            </p>
+
+            <div class="hero-actions">
+              <a href="#projects" class="btn btn-primary">
+                Explore Projects
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path d="M7 7h10v10" />
+                  <path d="M7 17 17 7" />
+                </svg>
+              </a>
+
+              <!-- Update data-copy-text AND the button label with your email -->
+              <button
+                type="button"
+                class="btn btn-secondary copy-trigger"
+                data-copy-text="[your.email@example.com]"
+                data-default-label="[your.email@example.com]"
+              >
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <rect width="14" height="14" x="8" y="8" rx="2" ry="2" />
+                  <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2" />
+                </svg>
+                <span class="copy-label">[your.email@example.com]</span>
+              </button>
+
+              <div class="social-row" aria-label="Social links">
+                <a
+                  href="https://github.com"
+                  target="_blank"
+                  rel="noreferrer"
+                  class="social-chip"
+                  aria-label="GitHub profile placeholder"
+                >
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"
+                    />
+                    <path d="M9 18c-4.51 2-5-2-7-2" />
+                  </svg>
+                  <span>GitHub</span>
+                </a>
+                <a
+                  href="https://linkedin.com"
+                  target="_blank"
+                  rel="noreferrer"
+                  class="social-chip"
+                  aria-label="LinkedIn profile placeholder"
+                >
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                    />
+                    <rect width="4" height="12" x="2" y="9" />
+                    <circle cx="4" cy="4" r="2" />
+                  </svg>
+                  <span>LinkedIn</span>
+                </a>
+                <a
+                  href="https://example.com"
+                  target="_blank"
+                  rel="noreferrer"
+                  class="social-chip"
+                  aria-label="Personal website placeholder"
+                >
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <circle cx="12" cy="12" r="10" />
+                    <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20" />
+                    <path d="M2 12h20" />
+                  </svg>
+                  <span>Website</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- Counts below update automatically via script.js -->
+            <div class="overview-grid" aria-label="Portfolio sections overview">
+              <a href="#experience" class="overview-card">
+                <div class="overview-icon" aria-hidden="true">
+                  <svg
+                    width="18"
+                    height="18"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <rect width="20" height="14" x="2" y="7" rx="2" ry="2" />
+                    <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
+                  </svg>
+                </div>
+                <div class="overview-content">
+                  <span class="overview-label">Experiences</span>
+                  <strong class="overview-value" data-count-for="experience">3 Examples</strong>
+                  <span class="overview-hint">Career timeline &amp; roles</span>
+                </div>
+              </a>
+
+              <a href="#certifications" class="overview-card">
+                <div class="overview-icon" aria-hidden="true">
+                  <svg
+                    width="18"
+                    height="18"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <circle cx="12" cy="8" r="6" />
+                    <path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11" />
+                  </svg>
+                </div>
+                <div class="overview-content">
+                  <span class="overview-label">Certifications</span>
+                  <strong class="overview-value" data-count-for="certifications">3 Examples</strong>
+                  <span class="overview-hint">Credentials &amp; badges</span>
+                </div>
+              </a>
+
+              <a href="#projects" class="overview-card">
+                <div class="overview-icon" aria-hidden="true">
+                  <svg
+                    width="18"
+                    height="18"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path
+                      d="M4 20h16a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.93a2 2 0 0 1-1.66-.9l-.82-1.2A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13c0 1.1.9 2 2 2Z"
+                    />
+                  </svg>
+                </div>
+                <div class="overview-content">
+                  <span class="overview-label">Projects</span>
+                  <strong class="overview-value" data-count-for="projects">4 Examples</strong>
+                  <span class="overview-hint">Work &amp; case studies</span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =================================================================
+           EXPERIENCES SECTION
+           WORKSHOP TIP: Copy an <article class="timeline-item"> to add more.
+           Change data-type="Full-time" to automatically update filter pills!
+           ================================================================= -->
+      <section id="experience" class="section">
+        <div class="container">
+          <div class="section-header">
+            <div class="section-header-text">
+              <p class="section-eyebrow">Career</p>
+              <h2 class="section-title">Experience</h2>
+              <p class="section-description">
+                Example work history entries. Replace these placeholders with your jobs,
+                internships, volunteer roles, or freelance work.
+              </p>
+            </div>
+            <div class="section-header-actions">
+              <button type="button" id="toggle-all-experiences" class="btn btn-ghost">
+                Expand all
+              </button>
+            </div>
+          </div>
+
+          <div class="toolbar">
+            <div
+              id="experience-filters"
+              class="filter-pills"
+              role="group"
+              aria-label="Filter experiences by work type"
+            ></div>
+          </div>
+
+          <div class="timeline" id="experience-list">
+            <!-- Example Experience 1 (Expanded by default) -->
+            <article
+              class="timeline-item is-expanded"
+              data-type="Full-time"
+              data-current="true"
+            >
+              <div class="timeline-marker is-current" aria-hidden="true"></div>
+              <div class="timeline-card">
+                <button
+                  type="button"
+                  class="timeline-trigger"
+                  aria-expanded="true"
+                  aria-controls="exp-panel-1"
+                >
+                  <div class="timeline-trigger-main">
+                    <div class="timeline-title-row">
+                      <h3 class="timeline-role">[Example Role: Frontend Web Developer]</h3>
+                      <span class="badge badge-accent">Current</span>
+                      <span class="badge">Full-time</span>
+                    </div>
+                    <div class="timeline-meta">
+                      <span class="meta-item">[Example Company Name]</span>
+                      <span class="meta-item">·</span>
+                      <span class="meta-item">[Month Year — Present]</span>
+                      <span class="meta-item">·</span>
+                      <span class="meta-item">[City, Country / Remote]</span>
+                    </div>
+                  </div>
+                  <svg
+                    class="timeline-chevron is-rotated"
+                    width="18"
+                    height="18"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path d="m6 9 6 6 6-6" />
+                  </svg>
+                </button>
+
+                <div id="exp-panel-1" class="timeline-content">
+                  <p class="timeline-summary">
+                    [Example Summary: Briefly describe your day-to-day responsibilities and the main
+                    product or team you supported.]
+                  </p>
+                  <ul class="achievement-list">
+                    <li>
+                      [Example Achievement 1: Built responsive landing pages and interactive UI
+                      components using semantic HTML, CSS, and JavaScript.]
+                    </li>
+                    <li>
+                      [Example Achievement 2: Improved page load speed or accessibility score by
+                      optimizing assets and keyboard navigation.]
+                    </li>
+                    <li>
+                      [Example Achievement 3: Collaborated with designers and teammates through code
+                      reviews and sprint demos.]
+                    </li>
+                  </ul>
+                  <div class="timeline-footer">
+                    <div class="tag-list" aria-label="Skills used">
+                      <span class="tag">HTML5</span>
+                      <span class="tag">CSS3</span>
+                      <span class="tag">JavaScript</span>
+                      <span class="tag">Git</span>
+                    </div>
+                    <a
+                      href="https://example.com"
+                      target="_blank"
+                      rel="noreferrer"
+                      class="inline-link"
+                    >
+                      [Company Website]
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- Example Experience 2 -->
+            <article class="timeline-item" data-type="Internship">
+              <div class="timeline-marker" aria-hidden="true"></div>
+              <div class="timeline-card">
+                <button
+                  type="button"
+                  class="timeline-trigger"
+                  aria-expanded="false"
+                  aria-controls="exp-panel-2"
+                >
+                  <div class="timeline-trigger-main">
+                    <div class="timeline-title-row">
+                      <h3 class="timeline-role">[Example Role: Software Engineering Intern]</h3>
+                      <span class="badge">Internship</span>
+                    </div>
+                    <div class="timeline-meta">
+                      <span class="meta-item">[Example Organization / Startup]</span>
+                      <span class="meta-item">·</span>
+                      <span class="meta-item">[Summer 2024]</span>
+                      <span class="meta-item">·</span>
+                      <span class="meta-item">[City, Country]</span>
+                    </div>
+                  </div>
+                  <svg
+                    class="timeline-chevron"
+                    width="18"
+                    height="18"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path d="m6 9 6 6 6-6" />
+                  </svg>
+                </button>
+
+                <div id="exp-panel-2" class="timeline-content" hidden>
+                  <p class="timeline-summary">
+                    [Example Summary: Supported an internal dashboard project and learned agile
+                    engineering workflows during a 12-week internship.]
+                  </p>
+                  <ul class="achievement-list">
+                    <li>
+                      [Example Achievement 1: Created reusable form validation helpers and unit
+                      tests for core user flows.]
+                    </li>
+                    <li>
+                      [Example Achievement 2: Documented API endpoints and fixed UI layout bugs across
+                      mobile viewports.]
+                    </li>
+                  </ul>
+                  <div class="timeline-footer">
+                    <div class="tag-list" aria-label="Skills used">
+                      <span class="tag">JavaScript</span>
+                      <span class="tag">REST APIs</span>
+                      <span class="tag">Responsive Design</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- Example Experience 3 -->
+            <article class="timeline-item" data-type="Contract">
+              <div class="timeline-marker" aria-hidden="true"></div>
+              <div class="timeline-card">
+                <button
+                  type="button"
+                  class="timeline-trigger"
+                  aria-expanded="false"
+                  aria-controls="exp-panel-3"
+                >
+                  <div class="timeline-trigger-main">
+                    <div class="timeline-title-row">
+                      <h3 class="timeline-role">[Example Role: Freelance Web Designer]</h3>
+                      <span class="badge">Contract</span>
+                    </div>
+                    <div class="timeline-meta">
+                      <span class="meta-item">[Example Client / Self-Employed]</span>
+                      <span class="meta-item">·</span>
+                      <span class="meta-item">[2023 — 2024]</span>
+                      <span class="meta-item">·</span>
+                      <span class="meta-item">[Remote]</span>
+                    </div>
+                  </div>
+                  <svg
+                    class="timeline-chevron"
+                    width="18"
+                    height="18"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path d="m6 9 6 6 6-6" />
+                  </svg>
+                </button>
+
+                <div id="exp-panel-3" class="timeline-content" hidden>
+                  <p class="timeline-summary">
+                    [Example Summary: Designed and launched lightweight websites for local businesses
+                    and community events.]
+                  </p>
+                  <ul class="achievement-list">
+                    <li>
+                      [Example Achievement 1: Delivered custom responsive sites with clear typography,
+                      contact forms, and fast load times.]
+                    </li>
+                    <li>
+                      [Example Achievement 2: Provided simple handover guides so clients could update
+                      their own content.]
+                    </li>
+                  </ul>
+                  <div class="timeline-footer">
+                    <div class="tag-list" aria-label="Skills used">
+                      <span class="tag">HTML</span>
+                      <span class="tag">CSS Grid</span>
+                      <span class="tag">Accessibility</span>
+                      <span class="tag">UI Design</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- =================================================================
+           CERTIFICATIONS SECTION
+           WORKSHOP TIP: Edit data-category, titles, and the hidden
+           .cert-extra-data block for modal details.
+           ================================================================= -->
+      <section id="certifications" class="section">
+        <div class="container">
+          <div class="section-header">
+            <div class="section-header-text">
+              <p class="section-eyebrow">Credentials</p>
+              <h2 class="section-title">Certifications</h2>
+              <p class="section-description">
+                Example certifications and course completions. Click &ldquo;Inspect
+                Credential&rdquo; on any card to preview the interactive modal.
+              </p>
+            </div>
+          </div>
+
+          <div class="toolbar">
+            <div
+              id="cert-filters"
+              class="filter-pills"
+              role="group"
+              aria-label="Filter certifications by category"
+            ></div>
+          </div>
+
+          <div class="card-grid" id="cert-grid">
+            <!-- Example Certification 1 -->
+            <article
+              class="cert-card"
+              data-category="Web Development"
+              data-issued="[Month Year]"
+              data-expiry="No expiration"
+              data-credential-id="[CERT-WEB-0001]"
+              data-verify-url="https://example.com"
+            >
+              <div class="cert-card-top">
+                <div class="cert-icon-wrap accent-sky" aria-hidden="true">
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <circle cx="12" cy="8" r="6" />
+                    <path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11" />
+                  </svg>
+                </div>
+                <div class="cert-badges">
+                  <span class="badge">Web Development</span>
+                  <span class="cert-date">[Month Year]</span>
+                </div>
+              </div>
+
+              <h3 class="cert-title">[Example: Responsive Web Design &amp; JS Certificate]</h3>
+              <p class="cert-issuer">[Example Issuing Platform / Academy]</p>
+              <p class="cert-summary">
+                [Example Description: Covers semantic HTML5, modern CSS Flexbox/Grid layouts, and
+                interactive DOM scripting with vanilla JavaScript.]
+              </p>
+
+              <div class="tag-list">
+                <span class="tag">HTML5</span>
+                <span class="tag">CSS Grid</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">DOM APIs</span>
+              </div>
+
+              <div class="card-footer">
+                <button type="button" class="btn btn-secondary btn-sm inspect-cert-btn">
+                  Inspect Credential
+                </button>
+                <a href="https://example.com" target="_blank" rel="noreferrer" class="inline-link">
+                  Verify
+                </a>
+              </div>
+            </article>
+
+            <!-- Example Certification 2 -->
+            <article
+              class="cert-card"
+              data-category="Cloud"
+              data-issued="[Month Year]"
+              data-expiry="[Month Year + 3]"
+              data-credential-id="[CERT-CLOUD-0002]"
+              data-verify-url="https://example.com"
+            >
+              <div class="cert-card-top">
+                <div class="cert-icon-wrap accent-amber" aria-hidden="true">
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <circle cx="12" cy="8" r="6" />
+                    <path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11" />
+                  </svg>
+                </div>
+                <div class="cert-badges">
+                  <span class="badge">Cloud</span>
+                  <span class="cert-date">[Month Year]</span>
+                </div>
+              </div>
+
+              <h3 class="cert-title">[Example: Cloud Practitioner Foundations]</h3>
+              <p class="cert-issuer">[Example Cloud Provider]</p>
+              <p class="cert-summary">
+                [Example Description: Validates foundational knowledge of cloud architecture,
+                deployment models, identity access control, and static site hosting.]
+              </p>
+
+              <div class="tag-list">
+                <span class="tag">Cloud Hosting</span>
+                <span class="tag">IAM Basics</span>
+                <span class="tag">Networking</span>
+                <span class="tag">Storage</span>
+              </div>
+
+              <div class="card-footer">
+                <button type="button" class="btn btn-secondary btn-sm inspect-cert-btn">
+                  Inspect Credential
+                </button>
+                <a href="https://example.com" target="_blank" rel="noreferrer" class="inline-link">
+                  Verify
+                </a>
+              </div>
+            </article>
+
+            <!-- Example Certification 3 -->
+            <article
+              class="cert-card"
+              data-category="Accessibility"
+              data-issued="[Month Year]"
+              data-expiry="[Month Year + 3]"
+              data-credential-id="[CERT-A11Y-0003]"
+              data-verify-url="https://example.com"
+            >
+              <div class="cert-card-top">
+                <div class="cert-icon-wrap accent-emerald" aria-hidden="true">
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <circle cx="12" cy="8" r="6" />
+                    <path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11" />
+                  </svg>
+                </div>
+                <div class="cert-badges">
+                  <span class="badge">Accessibility</span>
+                  <span class="cert-date">[Month Year]</span>
+                </div>
+              </div>
+
+              <h3 class="cert-title">[Example: Web Accessibility Fundamentals]</h3>
+              <p class="cert-issuer">[Example Certifying Organization]</p>
+              <p class="cert-summary">
+                [Example Description: Demonstrates practical skill in WCAG contrast standards,
+                keyboard navigation, screen-reader semantics, and accessible dialogs.]
+              </p>
+
+              <div class="tag-list">
+                <span class="tag">WCAG 2.2</span>
+                <span class="tag">Keyboard UX</span>
+                <span class="tag">WAI-ARIA</span>
+                <span class="tag">Semantic HTML</span>
+              </div>
+
+              <div class="card-footer">
+                <button type="button" class="btn btn-secondary btn-sm inspect-cert-btn">
+                  Inspect Credential
+                </button>
+                <a href="https://example.com" target="_blank" rel="noreferrer" class="inline-link">
+                  Verify
+                </a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- =================================================================
+           PROJECTS SECTION
+           WORKSHOP TIP: Add/edit <article class="project-card"> cards below.
+           Filters & search automatically inspect title, summary, and .tag!
+           ================================================================= -->
+      <section id="projects" class="section">
+        <div class="container">
+          <div class="section-header">
+            <div class="section-header-text">
+              <p class="section-eyebrow">Selected Work</p>
+              <h2 class="section-title">Projects</h2>
+              <p class="section-description">
+                Example portfolio projects. Filter by category, search by keyword or technology,
+                and open any project for its full case-study modal.
+              </p>
+            </div>
+          </div>
+
+          <div class="toolbar toolbar-projects">
+            <div
+              id="project-filters"
+              class="filter-pills"
+              role="group"
+              aria-label="Filter projects by category"
+            ></div>
+
+            <div class="search-box">
+              <svg
+                class="search-icon"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <circle cx="11" cy="11" r="8" />
+                <path d="m21 21-4.3-4.3" />
+              </svg>
+              <input
+                type="search"
+                id="project-search"
+                class="search-input"
+                placeholder="Search title or stack (e.g. JavaScript, CSS)..."
+                aria-label="Search projects"
+              />
+              <button
+                type="button"
+                id="project-search-clear"
+                class="search-clear"
+                aria-label="Clear search"
+                hidden
+              >
+                &times;
+              </button>
+            </div>
+          </div>
+
+          <div id="project-results-status" class="results-status" hidden>
+            <span id="project-results-text"></span>
+            <button type="button" class="link-button reset-projects-btn">Reset filters</button>
+          </div>
+
+          <div id="project-empty-state" class="empty-state" hidden>
+            <p class="empty-state-title">No matching projects found</p>
+            <p class="empty-state-copy">
+              Try another keyword or clear the active category filter.
+            </p>
+            <button type="button" class="btn btn-secondary reset-projects-btn">
+              Reset filters
+            </button>
+          </div>
+
+          <div class="card-grid" id="project-grid">
+            <!-- Example Project 1 -->
+            <article
+              class="project-card"
+              data-category="Web App"
+              data-status="Live Demo"
+              data-year="2025"
+              data-live-url="https://example.com"
+              data-repo-url="https://github.com"
+            >
+              <div class="project-banner accent-sky">
+                <div class="project-banner-pattern" aria-hidden="true">
+                  <span class="project-banner-monogram">01</span>
+                </div>
+                <div class="project-banner-badges">
+                  <span class="badge badge-glass">Live Demo</span>
+                  <span class="badge badge-glass">2025</span>
+                </div>
+              </div>
+
+              <div class="project-body">
+                <div class="project-category-row">
+                  <span class="project-category">Web App</span>
+                </div>
+                <h3 class="project-title">[Example Project: TaskFlow Board]</h3>
+                <p class="project-tagline">
+                  [Short Tagline: A clean browser-based task planner with local storage persistence]
+                </p>
+                <p class="project-summary">
+                  [Example Summary: Built an interactive kanban/todo board allowing users to filter
+                  tasks, toggle priorities, and save progress locally in the browser.]
+                </p>
+
+                <div class="tag-list">
+                  <span class="tag">HTML5</span>
+                  <span class="tag">CSS Grid</span>
+                  <span class="tag">JavaScript</span>
+                  <span class="tag">localStorage</span>
+                </div>
+              </div>
+
+              <!-- Extra details used when opening the Project Modal -->
+              <div class="project-extra-data" hidden>
+                <p class="extra-problem">
+                  [Example Problem: Many note and task apps require accounts and setup before you can
+                  organize a simple daily checklist.]
+                </p>
+                <p class="extra-solution">
+                  [Example Solution: Built a zero-setup single-page web app with instant DOM updates,
+                  keyboard shortcuts, and automatic browser storage sync.]
+                </p>
+                <ul class="extra-highlights">
+                  <li>[Highlight 1: Instant filtering across status and priority tags]</li>
+                  <li>[Highlight 2: Works offline with persistent localStorage state]</li>
+                  <li>[Highlight 3: Mobile-friendly responsive layout]</li>
+                </ul>
+              </div>
+
+              <div class="card-footer">
+                <button type="button" class="btn btn-secondary btn-sm view-project-btn">
+                  View Case Study
+                </button>
+                <div class="project-links">
+                  <a href="https://github.com" target="_blank" rel="noreferrer" class="inline-link">
+                    Code
+                  </a>
+                  <a href="https://example.com" target="_blank" rel="noreferrer" class="inline-link">
+                    Live
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Example Project 2 -->
+            <article
+              class="project-card"
+              data-category="UI / Design"
+              data-status="Open Source"
+              data-year="2024"
+              data-live-url="https://example.com"
+              data-repo-url="https://github.com"
+            >
+              <div class="project-banner accent-indigo">
+                <div class="project-banner-pattern" aria-hidden="true">
+                  <span class="project-banner-monogram">02</span>
+                </div>
+                <div class="project-banner-badges">
+                  <span class="badge badge-glass">Open Source</span>
+                  <span class="badge badge-glass">2024</span>
+                </div>
+              </div>
+
+              <div class="project-body">
+                <div class="project-category-row">
+                  <span class="project-category">UI / Design</span>
+                </div>
+                <h3 class="project-title">[Example Project: PaletteCraft Studio]</h3>
+                <p class="project-tagline">
+                  [Short Tagline: Interactive CSS color variable &amp; contrast ratio playground]
+                </p>
+                <p class="project-summary">
+                  [Example Summary: Helps developers preview light and dark color tokens side by side
+                  and export accessible CSS custom properties.]
+                </p>
+
+                <div class="tag-list">
+                  <span class="tag">CSS Variables</span>
+                  <span class="tag">JavaScript</span>
+                  <span class="tag">Accessibility</span>
+                  <span class="tag">UI Kit</span>
+                </div>
+              </div>
+
+              <div class="project-extra-data" hidden>
+                <p class="extra-problem">
+                  [Example Problem: Picking harmonious light and dark theme colors that still meet
+                  readable text contrast often involves tedious trial and error.]
+                </p>
+                <p class="extra-solution">
+                  [Example Solution: Created an interactive token previewer that calculates WCAG
+                  contrast ratios live as sliders move.]
+                </p>
+                <ul class="extra-highlights">
+                  <li>[Highlight 1: Live WCAG AA/AAA readability badge checks]</li>
+                  <li>[Highlight 2: One-click copy for generated CSS :root tokens]</li>
+                  <li>[Highlight 3: Zero external dependencies]</li>
+                </ul>
+              </div>
+
+              <div class="card-footer">
+                <button type="button" class="btn btn-secondary btn-sm view-project-btn">
+                  View Case Study
+                </button>
+                <div class="project-links">
+                  <a href="https://github.com" target="_blank" rel="noreferrer" class="inline-link">
+                    Code
+                  </a>
+                  <a href="https://example.com" target="_blank" rel="noreferrer" class="inline-link">
+                    Live
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Example Project 3 -->
+            <article
+              class="project-card"
+              data-category="Developer Tool"
+              data-status="Open Source"
+              data-year="2024"
+              data-repo-url="https://github.com"
+            >
+              <div class="project-banner accent-emerald">
+                <div class="project-banner-pattern" aria-hidden="true">
+                  <span class="project-banner-monogram">03</span>
+                </div>
+                <div class="project-banner-badges">
+                  <span class="badge badge-glass">Open Source</span>
+                  <span class="badge badge-glass">2024</span>
+                </div>
+              </div>
+
+              <div class="project-body">
+                <div class="project-category-row">
+                  <span class="project-category">Developer Tool</span>
+                </div>
+                <h3 class="project-title">[Example Project: JSON Formatter &amp; Diff]</h3>
+                <p class="project-tagline">
+                  [Short Tagline: Client-side JSON inspector and comparison utility]
+                </p>
+                <p class="project-summary">
+                  [Example Summary: Validates, pretty-prints, and highlights structural differences
+                  between two JSON payloads directly in the browser.]
+                </p>
+
+                <div class="tag-list">
+                  <span class="tag">JavaScript</span>
+                  <span class="tag">JSON</span>
+                  <span class="tag">HTML</span>
+                  <span class="tag">Testing</span>
+                </div>
+              </div>
+
+              <div class="project-extra-data" hidden>
+                <p class="extra-problem">
+                  [Example Problem: Pasting sensitive API payloads into third-party online formatters
+                  raises privacy concerns for developers.]
+                </p>
+                <p class="extra-solution">
+                  [Example Solution: Engineered a 100% client-side parser and diff viewer that keeps
+                  every byte inside the user's browser tab.]
+                </p>
+                <ul class="extra-highlights">
+                  <li>[Highlight 1: Clear syntax error line &amp; column feedback]</li>
+                  <li>[Highlight 2: Collapsible tree view for nested objects]</li>
+                  <li>[Highlight 3: Instant keyboard-accessible copy output]</li>
+                </ul>
+              </div>
+
+              <div class="card-footer">
+                <button type="button" class="btn btn-secondary btn-sm view-project-btn">
+                  View Case Study
+                </button>
+                <div class="project-links">
+                  <a href="https://github.com" target="_blank" rel="noreferrer" class="inline-link">
+                    Code
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Example Project 4 -->
+            <article
+              class="project-card"
+              data-category="Web App"
+              data-status="Case Study"
+              data-year="2023"
+              data-live-url="https://example.com"
+              data-repo-url="https://github.com"
+            >
+              <div class="project-banner accent-amber">
+                <div class="project-banner-pattern" aria-hidden="true">
+                  <span class="project-banner-monogram">04</span>
+                </div>
+                <div class="project-banner-badges">
+                  <span class="badge badge-glass">Case Study</span>
+                  <span class="badge badge-glass">2023</span>
+                </div>
+              </div>
+
+              <div class="project-body">
+                <div class="project-category-row">
+                  <span class="project-category">Web App</span>
+                </div>
+                <h3 class="project-title">[Example Project: Weather &amp; Travel Planner]</h3>
+                <p class="project-tagline">
+                  [Short Tagline: Multi-city forecast lookup and packing checklist generator]
+                </p>
+                <p class="project-summary">
+                  [Example Summary: Connects to public REST weather endpoints to display 5-day
+                  forecasts and suggest packing items based on conditions.]
+                </p>
+
+                <div class="tag-list">
+                  <span class="tag">Fetch API</span>
+                  <span class="tag">JavaScript</span>
+                  <span class="tag">CSS Flexbox</span>
+                  <span class="tag">REST API</span>
+                </div>
+              </div>
+
+              <div class="project-extra-data" hidden>
+                <p class="extra-problem">
+                  [Example Problem: Switching between separate forecast apps and packing notes makes
+                  trip prep fragmented.]
+                </p>
+                <p class="extra-solution">
+                  [Example Solution: Combined live weather data fetching with a dynamic rule-based
+                  packing checklist in a clean responsive layout.]
+                </p>
+                <ul class="extra-highlights">
+                  <li>[Highlight 1: Graceful loading and API error states]</li>
+                  <li>[Highlight 2: Saved favorite destinations in browser storage]</li>
+                  <li>[Highlight 3: Accessible temperature unit toggle (&deg;C / &deg;F)]</li>
+                </ul>
+              </div>
+
+              <div class="card-footer">
+                <button type="button" class="btn btn-secondary btn-sm view-project-btn">
+                  View Case Study
+                </button>
+                <div class="project-links">
+                  <a href="https://github.com" target="_blank" rel="noreferrer" class="inline-link">
+                    Code
+                  </a>
+                  <a href="https://example.com" target="_blank" rel="noreferrer" class="inline-link">
+                    Live
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ===================================================================
+         CONTACT CTA & FOOTER
+         =================================================================== -->
+    <footer id="contact" class="footer-section">
+      <div class="container">
+        <div class="contact-card">
+          <div>
+            <p class="section-eyebrow">Get in touch</p>
+            <h2 class="contact-title">[Contact Headline · e.g. Let&apos;s connect!]</h2>
+            <p class="contact-description">
+              [Contact Placeholder: Mention what kinds of roles, collaborations, or projects people
+              can reach out to you about.]
+            </p>
+          </div>
+
+          <div class="contact-actions">
+            <a href="mailto:your.email@example.com" class="btn btn-primary">Send Email</a>
+            <button
+              type="button"
+              class="btn btn-secondary copy-trigger"
+              data-copy-text="[your.email@example.com]"
+              data-default-label="Copy Email"
+            >
+              <span class="copy-label">Copy Email</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p class="footer-meta">
+            &copy; <span id="current-year"></span> [Your Name] &middot; Built with HTML, CSS &amp;
+            JavaScript.
+          </p>
+          <a href="#about" class="back-to-top">Back to top &uarr;</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ===================================================================
+         SHARED ACCESSIBLE MODAL (Used by Certifications & Projects)
+         =================================================================== -->
+    <div id="detail-modal" class="modal-backdrop" role="presentation" hidden>
+      <div
+        class="modal-panel"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="modal-title"
+      >
+        <div class="modal-header">
+          <div>
+            <p id="modal-subtitle" class="modal-subtitle"></p>
+            <h3 id="modal-title" class="modal-title"></h3>
+          </div>
+          <button
+            type="button"
+            id="modal-close-btn"
+            class="icon-button"
+            aria-label="Close modal"
+          >
+            &times;
+          </button>
+        </div>
+        <div id="modal-body" class="modal-body"></div>
+      </div>
+    </div>
+  </body>
+</html>
